@@ -23,7 +23,7 @@ public class Prob02 {
 			sum += intArray[i];
 		}
 		
-		double mean = (double) (sum / intArray.length);	//평균 구하기
+		double mean = sum / intArray.length;	//평균 구하기
 		
 		/* 출력 */
 		System.out.println("평균은 " + mean + " 입니다.");
