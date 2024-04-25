@@ -4,6 +4,17 @@ public class Point {
 	private int x;
 	private int y;
 	
+	
+	public Point() {
+		
+	}  // ColorPoint 에러 해결 - super(x,y); 를 사용할 경우, 이 코드가 없어도 에러가 발생하지 않음
+	
+	
+	public Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
 	public int getX() {
 		return x;
 	}
