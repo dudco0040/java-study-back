@@ -10,4 +10,9 @@ public abstract class Bird {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	// 추상 클래스 - 공통된 메소드를 정의
+	public abstract void fly();
+	public abstract void sing();
+	
 }
