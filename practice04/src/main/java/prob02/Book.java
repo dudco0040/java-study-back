@@ -4,7 +4,7 @@ public class Book {
 	int bookNo;		 // 번호
 	String title; 	 // 제목
 	String author; 	 // 작가
-	int stateCode; 	 // 상태코드 - defalt: 0, 호풀 시 1로 업데이트
+	int stateCode; 	 // 상태코드 - defalt: 0, 호출 시 1로 업데이트
 	
 	// 생성자
 	public Book(int bookNo, String title, String authuor) {
@@ -56,13 +56,7 @@ public class Book {
 	
 	// print
 	public void print() {
-//		// stateCode가 1이면 "재고있음" 0이면 "대여중"을 출력
-//		if(stateCode == 1) {
-//			System.out.println("재고 있음");  //return "재고 있음";
-//		} else if(stateCode == 0) {
-//			System.out.println("대여 중");	//return "대여 중"; 
-//		}
-		
+		// 책의 정보 출력
 		System.out.println("[" + bookNo + "] 책 제목:" + title + ", 작가:" + author + ", 대여 유무:" + (stateCode == 1 ? "재고있음" : "대여중"));
 		}
 }

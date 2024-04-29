@@ -26,7 +26,7 @@ public class BookShop {
 		// (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
 		// rent 메소드 호출
 		for (int i=0; i<books.length; i++) {
-			if(books[i].getBookNo() == num) {
+			if(books[i].getBookNo() == num) {  //books[i].method / books[i] => new Book
 				books[i].rent();  // 빌려감과 동시에 0으로 업데이트
 			}
 		}
