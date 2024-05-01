@@ -12,6 +12,8 @@ public class NSLookup {
 		try {
 			InetAddress[] inetAddresses = InetAddress.getAllByName("www.naver.com");  // 받는걸 짜라? - 스캐너 이용해서?
 			
+			
+			
 			// 이름으로 inetAddress 찾겠다.
 			// 하나의 이름에 여러 개의 IP를 할당할 수 있음
 			// IP에 여러 이름을 할당하는 것도 가능
@@ -27,3 +29,6 @@ public class NSLookup {
 	}
 
 }
+
+
+// to do 과제
